@@ -1,0 +1,124 @@
+body {
+  font-family: 'Lora', serif;
+  padding-left: 40px;
+  line-height: 160%;
+  padding-right:40px;
+}
+
+img {
+	margin-bottom: 10px;
+}
+
+.pubbody {
+	padding-right: 30px;
+}
+
+.line {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.line small {
+	line-height: 130%;
+}
+
+.line h3 {
+	line-height: 124%;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+.mini-header {
+	font-family: "Cinzel", serif;
+}
+
+h3 {
+	margin-top: 12px;
+}
+
+.aboutpic1 {
+	width: 300px;
+	height: auto;
+	padding: 20px;
+	padding-left: 0px;
+	padding-top: 15px;
+}
+
+.aboutpic2 {
+	width: 300px;
+	height: auto;
+	padding: 20px;
+	padding-right: 0px;
+	padding-top: 25px;
+}
+
+.slides .row {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.mini-header2 {
+	font-weight: 700;
+}
+
+.header-link {
+	text-align: right;
+	margin-top: 20px;
+	margin-right: 40px;
+	margin-bottom: 30px;
+}
+
+.alignleft {
+	align: left;
+	padding: 0px;
+	margin: 15px;
+	width:170px;
+	border: 1px solid #ADADAD;
+}
+
+strong {
+	font-weight: 700;
+	font-family: 'Lora', serif;
+}
+
+.alignleft2 {
+	align: left;
+	padding:10px;
+	margin-right: 40px;
+	margin-left: 20px;
+	margin-bottom: 0px;
+	width:140px;
+}
+
+.alignleft3 {
+	align: left;
+	padding: 0px;
+	margin: 0px;
+	width:200px;
+	border: 1px solid #ADADAD;
+}
+
+.links h4 {
+	line-height: 25px;
+}
+
+.papers {
+	display: block;
+	padding-left: 30px;
+}
+
+.header-link a {
+	color: #000000;
+	font-family: "Cinzel", serif;
+}
+
+.header-link a:hover {
+	text-decoration: none;
+	color: orange;
+}
+
