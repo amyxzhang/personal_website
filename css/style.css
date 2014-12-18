@@ -1,8 +1,8 @@
 body {
   font-family: 'Lora', serif;
-  padding-left: 40px;
+  padding-left: 80px;
   line-height: 160%;
-  padding-right:40px;
+  padding-right:50px;
 }
 
 img {
@@ -71,13 +71,17 @@ h3 {
 	margin-top: 20px;
 	margin-right: 40px;
 	margin-bottom: 30px;
+	color: #000000;
+	font-family: "Cinzel", serif;
+	font-size: larger;
 }
 
 .alignleft {
 	align: left;
 	padding: 0px;
 	margin: 15px;
-	width:170px;
+	margin-left: 2px;
+	width:160px;
 	border: 1px solid #ADADAD;
 }
 
@@ -115,10 +119,18 @@ strong {
 .header-link a {
 	color: #000000;
 	font-family: "Cinzel", serif;
+	font-size: larger;
+}
+
+.header-link b {
+	color: orange;
+	font-family: "Cinzel", serif;
+	font-size: larger;
 }
 
 .header-link a:hover {
 	text-decoration: none;
 	color: orange;
+	font-size: larger;
 }
 
