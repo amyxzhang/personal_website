@@ -38,25 +38,77 @@
 		 <div class="row">
 			     	<div class="col-xs-0 col-sm-0 col-md-2 links">
 		      		</div>
-		      		<div class="col-xs-12 col-sm-8 col-md-8 slides">
+		      		<div class="col-xs-12 col-sm-6 col-md-8 slides">
 		      			
 		      			<h2>Hoodsquare: Modeling and Recommending Neighborhoods in Location-based Social Networks</h2>
+		      			
+<P>
+	<h3>
+		Authors
+	</h3>
+	Amy X. Zhang, MIT CSAIL, University of Cambridge<BR>
+		Anastasios Noulas, University of Cambridge<BR>
+			Salvatore Scellato, University of Cambridge<BR>
+				Cecilia Mascolo, University of Cambridge
+</P>
+		      			<P>
+		      				<h3>Abstract</h3>
+		      				
+		      				Information garnered from activity on location-based
+social networks can be harnessed to characterize urban
+spaces and organize them into neighborhoods.
+In this work, we adopt a data-driven approach to the
+identification and modeling of urban neighborhoods
+using location-based social networks. We represent
+geographic points in the city using spatio-temporal
+information about Foursquare user check-ins and semantic
+information about places, with the goal of developing
+features to input into a novel neighborhood
+detection algorithm. The algorithm first employs a
+similarity metric that assesses the homogeneity of a
+geographic area, and then with a simple mechanism
+of geographic navigation, it detects the boundaries of
+a city’s neighborhoods. The models and algorithms
+devised are subsequently integrated into a publicly
+available, map-based tool named Hoodsquare that
+allows users to explore activities and neighborhoods
+in cities around the world.
+<BR><BR>
+Finally, we evaluate Hoodsquare in the context of a
+recommendation application where user profiles are
+matched to urban neighborhoods. By comparing
+with a number of baselines, we demonstrate how
+Hoodsquare can be used to accurately predict the
+home neighborhood of Twitter users. We also show
+that we are able to suggest neighborhoods geographically
+constrained in size, a desirable property in mobile
+recommendation scenarios for which geographical
+precision is key.
+
+</P>
+<P>
+	<a href="http://arxiv.org/pdf/1308.3657v1.pdf">PDF version of paper</a>
+</P>
+<BR><BR>
+		      			<P>
+		      				<h3 id="slides">Presentation</h3>
+		      			</P>
 		      			
 		      			These are the slides and notes from my talk that I gave at SocialCom '13 in Washington, D.C.<BR><BR>
 		      			
 		      				      			<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide01.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									</div>
 							</div>
 							<BR>
 		      			<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide02.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									My first point, which may seem obvious and trite, is that <strong>neighborhoods</strong> exist.  
 									Not just in a geopolitical sense, but they exist even in our minds as a way to categorize and 
 									characterize the places we have been to. Let's explore that idea.
@@ -64,37 +116,37 @@
 							</div>
 							<BR>
 		      			 <div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide03.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									Here is a picture of a place in New York you might recognize. Times Square right? What do you think of when you think about what Times Square means to you? (lots of tourists, lots of stores, busy at night-time)
 								</div>
 							</div>
 							<BR>
 		      			<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide04.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									Here's a very different picture - Chinatown, NYC. Lots of Chinese restaurants, Chinese people. 
 								</div>
 							</div>
 							<BR>
 		      			 <div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide05.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									Here is a photo of West Village, NYC - residential, quiet. 
 								</div>
 							</div>
 							<BR>
 		      			<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide06.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									Here is East Village, NYC - college students, restaurants and bars. 
 									<BR>
 										<BR>
@@ -104,19 +156,19 @@
 							</div>
 							<BR>
 		      			 <div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide07.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									My second point is that <strong>neighborhoods are important</strong>.
 								</div>
 							</div>
 							<BR>
 		      			<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide08.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									
 Here is a slide from the London Health Observatory that shows how heath between different subway stops changes drastically. Some may also recall the New Yorker infographic showing the income disparity that occurs while traveling through the different New York subway stops. 
 
@@ -124,10 +176,10 @@ Here is a slide from the London Health Observatory that shows how heath between 
 							</div>
 							<BR>
 		      			 <div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide09.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									It has been shown through research that people living in a city have very different experiences depending on where they lived. 
 Which neighborhood a person lives or grows up in can affect greatly their health, the socioeconomic opportunities they have, 
 and the public resources that are available to them. Politics and policy are often very different between neighborhoods, 
@@ -136,10 +188,10 @@ and also the businesses and venues around them as well as real estate may be ver
 							</div>
 							<BR>
 		      			<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide10.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 Finally, let's define exactly what we mean by a neighborhood, as it is defined in the literature: 
 A neighborhood is
 <i>"a contiguous geographic area within a larger city, limited in size, and somewhat homogeneous in its characteristics"</i>.
@@ -153,10 +205,10 @@ Homogeneous.
 							</div>
 							<BR>
 		      			 <div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide11.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									<strong>The Problem</strong>.
 Current definitions of neighborhoods are often inconsistent and arbitrary.
 
@@ -165,10 +217,10 @@ Current definitions of neighborhoods are often inconsistent and arbitrary.
 							</div>
 							<BR>
 						<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide12.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									Here are several neighborhood maps of Manhattan. 
 									The left is from a lifestyle and entertainment magazine, the middle is from an 
 									online yellow pages website, and the right is from the US Census Bureau.
@@ -189,10 +241,10 @@ boundaries for instance in the case of real estate agencies.
 							</div>
 							<BR>
 					<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide13.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 In the cases where data is used to gather information to determine neighborhood boundaries, they are:<BR>
 <strong>Rarely updated</strong>: 
 	For instance, US census tract boundaries have changed very little since its inception in the early 1900s and lots of research and public policy make use of these boundaries.
@@ -207,10 +259,10 @@ In the cases where data is used to gather information to determine neighborhood 
 							</div>
 							<BR>
 					<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide14.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 <strong>Solving the problem</strong>: 
 Use Location-Based Social Networks<BR>
 Benefits of online social network data: 
@@ -223,10 +275,10 @@ Benefits of online social network data:
 							</div>
 							<BR>
 				<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide15.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 
 There are some challenges with using online social network data as well.
 <BR>
@@ -244,10 +296,10 @@ There are some challenges with using online social network data as well.
 							</div>
 							<BR>
 					<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide16.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 	The data set we use is gathered from Foursquare by way of public Twitter profile information, which we gathered using the Twitter API. 
 
 This encompasses 34 million checkins by 900 thousand users in 4 million places. 
@@ -259,10 +311,10 @@ For this presentation, I'm mostly going to focus on the cities of New York, Lond
 							</div>
 							<BR>
 					<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide17.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									
 So from Foursquare, we know the specific people that check in to that geographic place. 
 There are many characteristics of people that can differentiate areas, such as ethnicity and occupation. 
@@ -279,10 +331,10 @@ Finally types of venues. From Foursquare data we also know the specific venues t
 							</div>
 							<BR>
 						<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide18.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 		We determined that a person is a local of a city if greater than 50% of their check-ins take place within a city.
 
 
@@ -296,10 +348,10 @@ As you can see, areas vary greatly in the number of tourists versus locals they 
 							</div>
 							<BR>
 					<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide19.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 We felt that the differences between an area that had its maximum number of checkins at noon versus 1PM were not that important. So instead we devised a way to split up the day into different buckets in a holistic way
 
 We plot the average number of checkins per hour across London, New York, and San Francisco. We see that all three cities experience spikes in activity around meal time, which makes sense since many Foursquare users like to check in to food related venues.
@@ -311,10 +363,10 @@ For that reason, we organize checkins across time into different time categories
 							</div>
 							<BR>
 					<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide20.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 Besides knowing the particular venues that are in a geographic area, we know the place category of each venue, such as Coffee Shop or Korean Restaurant, which is crowdsourced from Foursquare.
 
 In these photos you can see the differences in geographic areas in terms of both place category and time. The colors represent high level place categories such as Food or Shops or Nightlife, with larger circles meaning greater popularity. 
@@ -326,10 +378,10 @@ For example: As would be expected, Nightlife in magenta becomes much more preval
 							</div>
 							<BR>
 						<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide21.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 	So now we can characterize areas but how do we know if a characteristic is a defining one for an area?
 
 Let me elaborate on the reasoning behind that question a little bit. 
@@ -339,10 +391,10 @@ Let me elaborate on the reasoning behind that question a little bit.
 							</div>
 							<BR>
 					<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide22.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 	We use the phrase, "shopping district", or "theatre district", often to describe certain parts of town. But just because an area has a lot of shops, can we call it a "shopping district"? I'm sure there are shops throughout Manhattan, but it wouldn't be useful to define a shopping district that is the entirety of Manhattan.
 
 With that in mind, it doesn't make sense to characterize areas as an area for shopping just because there are shops there. Even if we know there are X shops in an area, or even X% of an area is comprised of shops, it's not a useful or defining characteristic of an area if all the surrounding areas also have X% shops.
@@ -354,10 +406,10 @@ So what do we mean when we call certain parts of town the "shopping district"? W
 							</div>
 							<BR>
 						<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide23.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 	So what we're actually interested in finding is highly dense pockets for each characteristic, or as we'll call it: <strong>hotspots</strong>.
 
 To find highly dense pockets we use density-based clustering, which is good because unlike partitioning algorithms, you don't need to know number of clusters beforehand and not all points must be contained within a cluster. So if an area does not have relative high density for a characteristic, it's not in a cluster.
@@ -369,10 +421,10 @@ We choose the density based clustering algorithm OPTICS because it can deal with
 							</div>
 							<BR>
 						<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide24.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 How OPTICS does this is by creating a reachability plot, created by ordering points based on their distance to each other so closer points are grouped together on the reachability plot and form valleys.
 
 Higher valleys have greater distances between points, which means they are less dense. So one way to find clusters is to just pick a threshold. But different thresholds lead to different clusters.
@@ -382,10 +434,10 @@ Higher valleys have greater distances between points, which means they are less 
 							</div>
 							<BR>
 					<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide25.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 				So to find clusters we use an automatic clustering algorithm.
 We find local maximums within the plot and partition the plot to form a hierarchical tree. 
 Then we gather the leaves off of the tree to get our locally dense hotspots. 
@@ -398,10 +450,10 @@ For instance, we do set a maximum average reachability distance to be acceptable
 							</div>
 							<BR>
 				<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide26.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 														Here's an example of the algorithm working on only the Chinese Restaurants in Manhattan. You can see how the area commonly known as Chinatown is highlighted by the algorithm.
 
 
@@ -409,10 +461,10 @@ For instance, we do set a maximum average reachability distance to be acceptable
 							</div>
 							<BR>
 					<div class="row">
-								<div class="col-xs-8 col-sm-4">
+								<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide27.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 				Another way to put it: how can we tell if an area is homogeneous relative to its neighboring areas? 
 To do that, we've come up with an equation that seeks to calculate how homogeneous an area is with respect to its surrounding areas. 
 We call this number an area's <strong>Homogeneity Index</strong> or H-Index.
@@ -422,10 +474,10 @@ We call this number an area's <strong>Homogeneity Index</strong> or H-Index.
 							</div>
 							<BR>
 						<div class="row">
-					<div class="col-xs-8 col-sm-4">
+					<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide28.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 	
 First split the city into small grid cells: 100m by 100m. 
 Then for each grid cell, compute a vector for that grid encapsulating the characteristics present at that grid. 
@@ -440,10 +492,10 @@ normalizing by number of cells in Npr.
 							</div>
 							<BR>
 						<div class="row">
-					<div class="col-xs-8 col-sm-4">
+					<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide29.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 																		We played with different values for r in H-Index. 
 									You can see how at 400meters, we get small areas with high homogeneity. 
 									As we increase the value of r, we begin to see larger areas with high relative homogeneity. 
@@ -453,19 +505,19 @@ normalizing by number of cells in Npr.
 							<BR>
 								
 						<div class="row">
-				<div class="col-xs-8 col-sm-4">
+				<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide30.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 										OK so now we have a value of H-Index for each cell in a city. How do you actually find polygon neighborhoods? As can been seen from the heatmaps from the previous slide, there are many different local maximums, so simply setting a hard threshold for H-Index and getting all the resulting polygons will only find some of the peaks.
 								</div>
 							</div>
 							<BR>
 								<div class="row">
-					<div class="col-xs-8 col-sm-4">
+					<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide31.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 										Instead we employ a moving threshold.
 
 First we decide on a min and max size that we want a neighborhood to be in terms of number of cells. 
@@ -481,10 +533,10 @@ Then we increment our threshold slightly and repeat with the remaining cells not
 							</div>
 							<BR>
 								<div class="row">
-				<div class="col-xs-8 col-sm-4">
+				<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide32.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									And here, finally are the resulting neighborhoods from the previous algorithm, done on the heatmaps of New York with radius of 400m and radius of 1200m. 
 
 This is a screenshot of <a href="http://hoodsquare.org">hoodsquare.org</a>, built with leaflet.js. You can not only see the neighborhoods but also the different hotspots for each characteristic.
@@ -494,28 +546,28 @@ This is a screenshot of <a href="http://hoodsquare.org">hoodsquare.org</a>, buil
 							</div>
 							<BR>
 								<div class="row">
-					<div class="col-xs-8 col-sm-4">
+					<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide33.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 										Here is a screenshot zoomed into Tokyo with some of the hotspots highlighted.
 								</div>
 							</div>
 							<BR>
 								<div class="row">
-				<div class="col-xs-8 col-sm-4">
+				<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide34.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 										Ok so now we have some different neighborhood boundaries. What can we do with them? And is there any way to evaluate our neighborhood boundaries at this task versus other versions of neighborhood boundaries?
 								</div>
 							</div>
 							<BR>
 					<div class="row">			
-				<div class="col-xs-8 col-sm-4">
+				<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide35.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 									One application is for us to recommend neighborhoods to people. Here, we took all the Twitter user profile information of the people that checked into the neighborhood commonly named "SoHo" to create this word cloud. 
 
 Below is a word cloud formed from Twitter user profiles of users that checked in to a neighborhood near Columbia University. You can see that there are some differences between the two word clouds. 
@@ -528,10 +580,10 @@ So then, our task is, given the Twitter profile information of a user, recommend
 							</div>
 							<BR>
 								<div class="row">
-				<div class="col-xs-8 col-sm-4">
+				<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide36.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 										We compare the neighborhood boundaries we defined with radius 400m also known as HoodSquare Small and with radius 800m also known as HoodSquare Large against the following baselines.
 
 First a simply partitioning of the city into grid cells of 800m by 800m.
@@ -546,10 +598,10 @@ And last, a set of boundaries produced by Livehoods, another algorithmic approac
 							</div>
 							<BR>
 								<div class="row">
-				<div class="col-xs-8 col-sm-4">
+				<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide37.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 		A point to make about this task is that the size of the area that is recommended is important. It would be difficult for a user to navigate a neighborhood that is sprawling. Without taking size into consideration, this task would be trivial. For instance if one neighborhood is the size of Manhattan, the accuracy of recommending this neighborhood would be 100%.
 
 To give you an idea of how the neighborhoods between the various baselines and hoodsquare small and hoodsquare large compare in terms of size, here is their probability density functions for area size. The grid baseline has a uniform area of .64 km squared so it's not shown here.
@@ -562,10 +614,10 @@ In contrast, Hoodsquare S stays around 0.1 km sq while Hoodsquare L stays near 1
 							</div>
 							<BR>
 								<div class="row">
-				<div class="col-xs-8 col-sm-4">
+				<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide38.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 So we recommend to our test users the top N most similar neighborhoods given a user's profile information, where N goes from 1 to 25.
 
 We look at two different evaluation metrics:
@@ -580,10 +632,10 @@ We can see that several of the sets of neighborhoods perform well in terms of Ac
 							</div>
 							<BR>
 					<div class="row">			
-				<div class="col-xs-8 col-sm-4">
+				<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide39.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 - Characterized places in a city by place, time, tourist/local, and found hotspots for each characteristic<BR>
 - Used a homogeneity index to indicate areas of high relative homogeneity and employed an algorithm to find neighborhood boundaries<BR>
 - Integrated neighborhoods and hotspots into an online visualization<BR>
@@ -594,10 +646,10 @@ We can see that several of the sets of neighborhoods perform well in terms of Ac
 							<BR>
 								
 					<div class="row">			
-				<div class="col-xs-8 col-sm-4">
+				<div class="col-xs-8 col-sm-6">
 									<img class="alignleft3" align="left" alt="hoodsquare" src="img/hoodsquare/hoodsquare/Slide40.jpg" />
 								</div>
-								<div class="col-xs-8 col-sm-8">
+								<div class="col-xs-8 col-sm-6">
 										Email me with questions or comments - <a href="mailto:axz@mit.edu">axz at mit.edu</a>
 								</div>
 							</div>
