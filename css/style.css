@@ -1,8 +1,6 @@
 body {
   font-family: 'Lora', serif;
-  padding-left: 80px;
   line-height: 160%;
-  padding-right:50px;
 }
 
 img {
@@ -79,8 +77,6 @@ h3 {
 .alignleft {
 	align: left;
 	padding: 0px;
-	margin: 15px;
-	margin-left: 2px;
 	width:160px;
 	border: 1px solid #ADADAD;
 }
