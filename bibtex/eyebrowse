@@ -1,0 +1,8 @@
+@inproceedings{zhang:eyebrowse,
+  title={Opportunities and Challenges Around a Tool for Social and Public Web Activity Tracking},
+  author={Zhang, Amy X. and Blum, Joshua and Karger, David},
+  booktitle={Proceedings of the 19th ACM Conference on Computer Supported Cooperative Work \& Social Computing},
+  year={2016},
+  series = {CSCW '16},
+  organization={ACM}
+} 

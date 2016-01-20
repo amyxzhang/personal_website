@@ -1,0 +1,7 @@
+@inproceedings{zhangconfer,
+  title={Confer: A conference recommendation and meetup tool},
+  author={Zhang, Amy X. and Karger, David and Bhardwaj, Anant},
+  booktitle={Proceedings of the 19th ACM Conference on Computer Supported Cooperative Work \& Social Computing: Demo Publication},
+  year={2016},
+  organization={ACM}
+}
