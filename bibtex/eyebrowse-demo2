@@ -1,0 +1,7 @@
+@inproceedings{zhangeyebrowse2,
+  title={Reimagining Web Activity Tracking for Social Applications},
+  author={Zhang, Amy X. and Blum, Joshua and Karger, David},
+  booktitle = {Proceedings of the 34th Annual ACM Conference on Human Factors in Computing Systems: Workshop Publication},
+ series = {Everyday Surveillance @ CHI '16},
+ organization={ACM}
+}
