@@ -1,0 +1,8 @@
+@inproceedings{zhang:wikum,
+  title={Wikum: Bridging Discussion Forums and Wikis Using Recursive Summarization},
+  author={Zhang, Amy X. and Verou, Lea and Karger, David},
+  booktitle={Proceedings of the 20th ACM Conference on Computer Supported Cooperative Work \& Social Computing},
+  year={2017},
+  series = {CSCW '17},
+  organization={ACM}
+} 
