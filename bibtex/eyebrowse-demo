@@ -3,5 +3,6 @@
   author={Zhang, Amy X. and Blum, Joshua and Karger, David},
   booktitle={Proceedings of the 19th ACM Conference on Computer Supported Cooperative Work \& Social Computing: Demo Publication},
   year={2016},
+  series = {CSCW '16},
   organization={ACM}
 }

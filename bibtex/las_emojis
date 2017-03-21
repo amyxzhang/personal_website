@@ -1,0 +1,8 @@
+@inproceedings{zhang_las_emojis,
+  title={Using Student Annotated Hashtags and Emojis to Collect Nuanced Affective States},
+  author={Zhang, Amy X. and Igo, Michele and Facciotti, Marc and Karger, David},
+  booktitle = {Proceedings of the Fourth Annual ACM Conference on Learning at Scale: Poster Publication},
+  year={2017},
+  series = {L@S '17},
+ organization={ACM}
+}
