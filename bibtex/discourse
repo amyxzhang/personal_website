@@ -1,0 +1,8 @@
+@inproceedings{coarsediscourse, 
+title={Characterizing Online Discussion Using Coarse Discourse Sequences}, 
+author={Zhang, Amy X. and Culbertson, Bryan and Paritosh, Praveen}, 
+booktitle={Proceedings of the 11th International AAAI Conference on Weblogs and Social Media}, 
+series={ICWSM '17}, 
+year={2017}, 
+location = {Montreal, Canada} 
+}
