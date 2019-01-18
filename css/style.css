@@ -130,3 +130,16 @@ strong {
 	font-size: larger;
 }
 
+.btn {
+	font-family: "Arial";
+}
+
+.btn-blog {
+	background-color: brown;
+	color: #ffffff;
+}
+
+.btn-blog:hover {
+	background-color: #53290b;
+	color: #ffffff;
+}
