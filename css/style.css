@@ -1,6 +1,21 @@
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Work Sans', sans-serif;
   line-height: 160%;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a {
+	color: #000000;
+	font-weight: 400;
+}
+
+.title_name {
+	font-family: "Montserrat", sans-serif;
+	font-variant: small-caps;
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 50px;
 }
 
 img {
@@ -14,6 +29,8 @@ img {
 .line {
 	padding-top: 0px;
 	margin-top: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .line small {
@@ -32,7 +49,9 @@ a:hover {
 }
 
 .mini-header {
-	font-family: "Cinzel", serif;
+	font-family: "Montserrat", sans-serif;
+	font-variant: small-caps;
+	font-weight: 300;
 }
 
 h3 {
@@ -61,7 +80,7 @@ h3 {
 }
 
 .mini-header2 {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .header-link {
@@ -70,8 +89,16 @@ h3 {
 	margin-right: 40px;
 	margin-bottom: 30px;
 	color: #000000;
-	font-family: "Cinzel", serif;
+	font-family: "Montserrat", sans-serif;
+	font-variant: small-caps;
+	font-weight: 300;
 	font-size: larger;
+}
+
+h1 {
+	font-family: "Montserrat", sans-serif;
+	font-variant: small-caps;
+	font-weight: 300;
 }
 
 .alignleft {
@@ -79,11 +106,19 @@ h3 {
 	padding: 0px;
 	width:160px;
 	border: 1px solid #ADADAD;
+	margin-top: 15px;
 }
 
 strong {
-	font-weight: 700;
-	font-family: 'Lora', serif;
+	font-family: 'Work Sans', sans-serif;
+	  line-height: 160%;
+	  font-weight: 600;
+}
+
+
+.center-block {
+	margin-right: inherit;
+	padding-right: 5px;
 }
 
 .alignleft2 {
