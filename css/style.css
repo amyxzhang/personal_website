@@ -59,11 +59,10 @@ h3 {
 }
 
 .aboutpic1 {
-	width: 300px;
+	width: 560px;
 	height: auto;
-	padding: 20px;
-	padding-left: 0px;
-	padding-top: 15px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .aboutpic2 {
@@ -71,7 +70,7 @@ h3 {
 	height: auto;
 	padding: 20px;
 	padding-right: 0px;
-	padding-top: 25px;
+	padding-top: 0px;
 }
 
 .slides .row {
@@ -177,4 +176,9 @@ strong {
 .btn-blog:hover {
 	background-color: #53290b;
 	color: #ffffff;
+}
+
+
+.slide_teaser {
+	border: 1px #000000 solid;
 }
