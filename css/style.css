@@ -103,7 +103,8 @@ h1 {
 .alignleft {
 	align: left;
 	padding: 0px;
-	width:160px;
+	max-width:200px;
+	max-height:160px;
 	border: 1px solid #ADADAD;
 	margin-top: 15px;
 }
