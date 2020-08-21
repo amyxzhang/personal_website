@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3375462.3375485,
+author = {Geller, Shay A. and Hoernle, Nicholas and Gal, Kobi and Segal, Avi and Zhang, Amy X. and Karger, David and Facciotti, Marc T. and Igo, Michele},
+title = {#Confused and beyond: Detecting Confusion in Course Forums Using Students' Hashtags},
+year = {2020},
+isbn = {9781450377126},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3375462.3375485},
+doi = {10.1145/3375462.3375485},
+abstract = {Students' confusion is a barrier for learning, contributing to loss of motivation and to disengagement with course materials. However, detecting students' confusion in large-scale courses is both time and resource intensive. This paper provides a new approach for confusion detection in online forums that is based on harnessing the power of students' self-reported affective states (reported using a set of pre-defined hashtags). It presents a rule for labeling confusion, based on students' hashtags in their posts, that is shown to align with teachers' judgement. We use this labeling rule to inform the design of an automated classifier for confusion detection for the case when there are no self-reported hashtags present in the test set. We demonstrate this approach in a large scale Biology course using the Nota Bene annotation platform. This work lays the foundation to empower teachers with better support tools for detecting and alleviating confusion in online courses.},
+booktitle = {Proceedings of the Tenth International Conference on Learning Analytics &amp; Knowledge},
+pages = {589–594},
+numpages = {6},
+keywords = {confusion detection, text classification, hashtags, emojis, self-reported affect, online discussion forum},
+location = {Frankfurt, Germany},
+series = {LAK '20}
+}
