@@ -117,7 +117,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pubbody">
 							
-							<article  property="member" typeof="Person" mv-multiple style="[if(jobTitle !='pi' and alum == false, '', 'display:none;')]">
+							<article  property="member" typeof="Person" mv-multiple style="[if(jobTitle =='phd' and alum == false, '', 'display:none;')]">
 								
 								<img src="[image]" class="staffimage" alt="" />
 								
@@ -134,6 +134,46 @@
 											<option value="undergrad">Undergraduate Student</option>
 										</select>
 									</span>
+
+									
+									
+							</article>
+								
+									
+						</div>
+					</div>
+				</div>
+
+
+				  
+					<br>
+					<span class="mini-header">
+						<h3>PhD and Postdoc Alumni</h3>
+					</span>
+					
+					<div mv-bar="none" mv-app="people" mv-source="https://github.com/Social-Futures-Lab/social-futures-lab.github.io">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pubbody">
+							
+							<article  property="member" typeof="Person" mv-multiple style="[if((jobTitle == 'phd' or jobTitle =='postdoc') and alum == true, '', 'display:none;')]">
+								
+								<img src="[image]" class="staffimage" alt="" />
+								
+								<a href="" property="homepage"><span property="name">Name</span></a><meta property="id" content="[name]">, 
+									
+									<span property="jobTitle">
+										<select>
+											<option value="pi">Assistant Professor</option>
+											<option value="postdoc" selected>Postdoctoral Researcher</option>
+											<option value="phd" selected>PhD Student</option>
+											<option value="visiting">Visiting Researcher</option>
+											<option value="masters">Masters Student</option>
+											<option value="undergrad">Undergraduate Student</option>
+										</select>
+									</span><br>&nbsp;&nbsp;&nbsp;
+
+									<span property="current">Current</span><meta property="id" content="[current]">
+									
 
 									
 									
@@ -244,6 +284,11 @@
 								<BR>
 							
 							<span property="author" mv-multiple>
+								
+								<meta property="authorData" mv-value="get(people.member, 'id=' & author_name)" />
+                 							 <img src="[authorData.image]" class="staffimage" alt="" mv-if="authorData != ''">
+
+								
 									<span property="author_name" mv-edit-list="memberList">Author Name</span></span>
 							<BR>
 								<a href="null" property="conference url">
