@@ -52,6 +52,42 @@
 		        		</div>
 		    	 </div>
 		</div>
+
+
+		<div mv-bar="none" mv-app="people" mv-source="https://github.com/Social-Futures-Lab/social-futures-lab.github.io" style="display:none;">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+              <article class="member-index" property="member" typeof="Person" mv-multiple>
+                <a href="" property="homepage">
+                  <img src="null" class="person-img" property="image" alt="" />
+
+                  <p><span property="name">Name</span></p>
+                </a>
+                  <meta property="id" content="[name]">
+
+                  <p property="jobTitle">
+                    <select>
+                      <option value="pi">Assistant Professor</option>
+                      <option value="postdoc" selected>Postdoctoral Researcher</option>
+                      <option value="phd" selected>PhD Student</option>
+                      <option value="visiting">Visiting Researcher</option>
+                      <option value="masters">Masters Student</option>
+                      <option value="undergrad">Undergraduate Student</option>
+                    </select>
+                  </p>
+
+              </article>
+
+                <div hidden>
+                  <datalist id="memberList">
+                    <option property="person" mv-multiple mv-value="name"></option>
+                  </datalist>
+                </div>
+
+            </div>
+          </div>
+        </div>
 		
 		<div class="container-fluid">
 			
@@ -100,7 +136,7 @@
 							
 							<span property="author" mv-multiple>
 									<meta property="authorData" mv-value="get(people.member, 'id=' & author_name)" />
-									<img src="[authorData.image]" alt="" mv-if="authorData != ''">
+									<img src="[authorData.image]" class="authorimage" alt="" mv-if="authorData != ''">
 									<span property="author_name" mv-edit-list="memberList">Author Name</span></span>
 							<BR>
 								
@@ -185,10 +221,10 @@
 							<BR>
 								
 							
-							<span property="author" mv-multiple>
-									<meta property="authorData" mv-value="get(people.member, 'id=' & author_name)" />
-									<img src="[authorData.image]" alt="" mv-if="authorData != ''">
-									<span property="author_name" mv-edit-list="memberList">Author Name</span></span>
+							<span property="author2" mv-multiple>
+									<meta property="authorData2" mv-value="get(people.member, 'id=' & author_name)" />
+									<img src="[authorData2.image]" class="authorimage" alt="" mv-if="authorData2 != ''">
+									<span property="author_name2" mv-edit-list="memberList">Author Name</span></span>
 							<BR>
 								<span property="publication_type">Publication Type</span> 
 								<a href="null" property="conference url">
