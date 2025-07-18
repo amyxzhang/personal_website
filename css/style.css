@@ -149,6 +149,7 @@ strong {
     -o-object-fit: cover;
     object-fit: cover;
     vertical-align: middle;
+	margin-bottom: 0px;
 }
 
 .papers {
