@@ -157,6 +157,16 @@ strong {
 	margin-bottom: 0px;
 }
 
+.authorimage {
+	display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
 .papers {
 	display: block;
 	padding-left: 30px;
