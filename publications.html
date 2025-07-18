@@ -221,10 +221,10 @@
 							<BR>
 								
 							
-							<span property="author2" mv-multiple>
-									<meta property="authorData2" mv-value="get(people.member, 'id=' & author_name)" />
-									<img src="[authorData2.image]" class="authorimage" alt="" mv-if="authorData2 != ''">
-									<span property="author_name2" mv-edit-list="memberList">Author Name</span></span>
+							<span property="author" mv-multiple>
+									<meta property="authorData" mv-value="get(people.member, 'id=' & author_name)" />
+									<img src="[authorData.image]" class="authorimage" alt="" mv-if="authorData != ''">
+									<span property="author_name" mv-edit-list="memberList">Author Name</span></span>
 							<BR>
 								<span property="publication_type">Publication Type</span> 
 								<a href="null" property="conference url">
