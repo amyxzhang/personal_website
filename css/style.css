@@ -94,6 +94,11 @@ h3 {
 	font-size: larger;
 }
 
+.current {
+	font-size: smaller;
+	font-style: italic;
+}
+
 h1 {
 	font-family: "Montserrat", sans-serif;
 	font-variant: small-caps;
